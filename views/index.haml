@@ -1,8 +1,18 @@
 %html
 	%head
 		%title agesage Downloader
+		%link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+		%script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+		%meta(name="description" content="裏アゲサゲのURLだけで、動画がダウンロードできます。完全無料。")
+		%meta(name="keywords" content="裏アゲサゲ,ダウンロード")
 	%body
-		%form(action="/" method="POST")
-			%input(name="url" placeholder="please input agesage url")
-			%input(type="submit" value="GO")
+		.container
+			%h1 裏アゲサゲダウンローダ
+			%p 裏アゲサゲのURLだけで、動画がダウンロードできます。完全無料。
+			%p まだベータ版なので広告もありません。
+			%form.form-horizontal(action="/" method="POST")
+				%input.form-control(name="url" placeholder="please input agesage url")
+				%div(style="padding:20px")
+				.text-center
+					%input.btn.btn-success(type="submit" value="GO")
 
