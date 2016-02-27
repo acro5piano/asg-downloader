@@ -42,6 +42,7 @@ class Application < Sinatra::Base
 
 		`wget -O #{file_name} "#{movie_url}"`
 		send_file(file_name, :disposition => 'attachment', :filename => File.basename(file_name))
+		#send_file(file_name, :disposition => 'attachment')
 
 	end
 
