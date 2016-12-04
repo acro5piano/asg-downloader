@@ -1,6 +1,7 @@
 *.tmp
 *.swp
-outputs
+outputs/*
+!outputs/.gitkeep
 .bundle
 vendor
 

@@ -7,3 +7,6 @@ gem 'sinatra-reloader' , '1.0'
 gem 'thin'
 gem "haml"
 
+group :development do
+  gem 'pry'
+end
