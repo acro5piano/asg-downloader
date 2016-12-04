@@ -1,19 +1,25 @@
 %html
-	%head
-		%title agesage Downloader
-		%link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
-		%script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
-		%meta(name="description" content="裏アゲサゲのURLだけで、動画がダウンロードできます。完全無料。")
-		%meta(name="keywords" content="裏アゲサゲ,ダウンロード")
-		%script(src="/analytics.js")
-	%body
-		.container
-			%h1 裏アゲサゲダウンローダ
-			%p 裏アゲサゲのURLだけで、動画がダウンロードできます。完全無料。
-			%p まだベータ版なので広告もありません。
-			%form.form-horizontal(action="/" method="POST")
-				%input.form-control(name="url" placeholder="please input agesage url")
-				%div(style="padding:20px")
-				.text-center
-					%input.btn.btn-success(type="submit" value="GO")
+  %head
+    %title agesage Downloader
+    %link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+    %script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+    %meta(name="description" content="裏アゲサゲのURLだけで、動画がダウンロードできます。完全無料。")
+    %meta(name="keywords" content="裏アゲサゲ,ダウンロード")
+    %script(src="/analytics.js")
+  %body
+    .container
+      %h1 裏アゲサゲダウンローダ
+      %p 裏アゲサゲのURLだけで、動画がダウンロードできます。完全無料。
+      %p まだベータ版なので広告もありません。
+      %p
+        ※ アゲサゲの仕様が変わって、簡単にはダウンロードできなくなってしまいました。
+        どなたかプルリク下さい。
+      %p
+      %form.form-horizontal(action="/" method="POST")
+        %input.form-control(name="url" placeholder="please input agesage url")
+        %div(style="padding:20px")
+        .text-center
+          %input.btn.btn-success(type="submit" value="GO")
 
+    %a{:href => "https://github.com/acro5piano/asg-downloader"}
+      %img{:alt => "Fork me on GitHub", "data-canonical-src" => "https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png", :src => "https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67", :style => "position: absolute; top: 0; right: 0; border: 0;"}/
